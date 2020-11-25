@@ -12,10 +12,6 @@ windows:
         -  clear; neofetch
         -
         -
-  - install:
-      layout: 63e7,211x47,0,0,37
-      panes:
-        -
   - download:
       layout: 63e8,211x47,0,0,38
       panes:
@@ -24,10 +20,6 @@ windows:
       layout: 63e9,211x47,0,0,39
       panes:
         -  clear; cd Programmation/
-  - discord:
-      layout: e3e0,211x47,0,0,40
-      panes:
-        -  clear; cordless
   - ranger:
       layout: e3e1,211x47,0,0,41
       panes:
