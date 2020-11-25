@@ -1,0 +1,37 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "sqltools.useNodeRuntime": true,
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "editor.largeFileOptimizations": false,
+
+  "editor.tabSize": 2,
+  "editor.minimap.showSlider": "always",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontLigatures": true,
+  "editor.dragAndDrop": false,
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "javascript.implicitProjectConfig.checkJs": true,
+  "php.suggest.basic": false,
+  "editor.quickSuggestions": {
+      "other": true,
+      "comments": true,
+      "strings": false
+  },
+
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "shellcheck.customArgs": [
+      "-x"
+  ],
+  "python.formatting.provider": "black"
+}

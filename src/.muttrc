@@ -1,0 +1,20 @@
+set realname = "Thibault Serti"
+set from = "thibault.serti@gmail.com"
+set use_from = yes
+set envelope_from = yes
+
+set smtp_url = "smtps://thibault.serti@gmail.com@smtp.gmail.com:465/"
+set smtp_pass = "pass"
+set imap_user = "thibault.serti@gmail.com"
+set imap_pass = "pass"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set ssl_force_tls = yes
+set timeout = 30
+
+# G to get mail
+bind index "G" imap-fetch-mail
+set editor = "vim"
+set charset = "utf-8"
+set record = ''
+set header_cache="~/.mutt/headercache"
