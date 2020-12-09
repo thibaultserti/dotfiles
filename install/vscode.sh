@@ -22,10 +22,17 @@ code --install-extension tomoki1207.pdf
 code --install-extension GrapeCity.gc-excelviewer
 code --install-extension redhat.vscode-xml
 
+# Liveshare
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension ms-vsliveshare.vsliveshare-audio
+
 # Programming languages
 code --install-extension golang.go
 code --install-extension ms-vscode.cpptools
 code --install-extension redhat.java
 code --install-extension ms-vscode.powershell
+
+# Python
 code --install-extension ms-python.python
 code --install-extension ms-toolsai.jupyter
+code --install-extension ms-python.vscode-pylance
