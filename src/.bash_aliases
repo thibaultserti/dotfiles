@@ -20,6 +20,7 @@ export COLOR_LIGHT_GRAY='\e[0;37m'
 export COLOR_WHITE='\e[1;37m'
 
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 export PAGER="less -FR"
 export EDITOR="vim"
