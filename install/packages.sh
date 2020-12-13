@@ -15,6 +15,9 @@ while [ "$1" != "" ]; do
   --os)
     OS=$VALUE
     ;;
+  --level)
+    LEVEL=$VALUE
+    ;;
   *)
     echo "ERROR: unknown parameter \"$PARAM\""
     usage
@@ -32,4 +35,10 @@ elif [[ "$OS" = "fedora" ]] || [[ "$OS" = "redhat" ]]; then
   echo "redhat"
 else
   echo "unkwnown distribution"
+  exit 1
+fi
+
+if [[ "$LEVEL" -lt 1 ]] || [[ "$LEVEL" -gt 3 ]]; then
+  echo "unkwnown level"
+  exit 1
 fi
