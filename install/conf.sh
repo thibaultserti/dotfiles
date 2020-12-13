@@ -18,4 +18,4 @@ install --mode=640 src/tmuxinator/* ~/.tmuxinator/
 install --mode=640 src/ssh/* ~/.ssh/
 install --mode=700 src/gnupg/* ~/.gnupg/
 install --mode=750 src/bin/* ~/bin/
-find src/config/ -type f -exec sh -c 'dir="$(cut -d"/" -f3- <<< "$1")"; install --mode=640 "$1" ~/.config/$dir' _ {} \;
+find src/config/ -type f -exec sh -c 'dir="$(cut -d"/" -f3- <<< "$1")"; install --mode=640 "$1" ~/.config/"$dir"' _ {} \;
