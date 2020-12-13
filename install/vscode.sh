@@ -1,38 +1,46 @@
 #!/bin/bash
 
-# ESLint, Prettier
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension esbenp.prettier-vscode
+CODES_VERSION="code code-insiders"
 
-# Shell
-code --install-extension foxundermoon.shell-format
-code --install-extension timonwong.shellcheck
+for CODE in ${CODES_VERSION}; do
+    # ESLint, Prettier
+    ${CODE} --install-extension dbaeumer.vscode-eslint
+    ${CODE} --install-extension esbenp.prettier-vscode
 
-# Docker
-code --install-extension ms-azuretools.vscode-docker
-code --install-extension ms-vscode-remote.remote-containers
+    # Shell
+    ${CODE} --install-extension foxundermoon.shell-format
+    ${CODE} --install-extension timonwong.shellcheck
 
-# SQL
-code --install-extension mtxr.sqltools
-code --install-extension mtxr.sqltools-driver-sqlite
+    # Docker
+    ${CODE} --install-extension ms-azuretools.vscode-docker
+    ${CODE} --install-extension ms-vscode-remote.remote-containers
 
-# Icons and ut
-code --install-extension PKief.material-icon-theme
-code --install-extension tomoki1207.pdf
-code --install-extension GrapeCity.gc-excelviewer
-code --install-extension redhat.vscode-xml
+    # Git
+    ${CODE} --install-extension donjayamanne.githistory
+    ${CODE} --install-extension eamodio.gitlens
 
-# Liveshare
-code --install-extension ms-vsliveshare.vsliveshare
-code --install-extension ms-vsliveshare.vsliveshare-audio
+    # SQL
+    ${CODE} --install-extension mtxr.sqltools
+    ${CODE} --install-extension mtxr.sqltools-driver-sqlite
 
-# Programming languages
-code --install-extension golang.go
-code --install-extension ms-vscode.cpptools
-code --install-extension redhat.java
-code --install-extension ms-vscode.powershell
+    # Icons and ut
+    ${CODE} --install-extension PKief.material-icon-theme
+    ${CODE} --install-extension tomoki1207.pdf
+    ${CODE} --install-extension GrapeCity.gc-excelviewer
+    ${CODE} --install-extension redhat.vscode-xml
 
-# Python
-code --install-extension ms-python.python
-code --install-extension ms-toolsai.jupyter
-code --install-extension ms-python.vscode-pylance
+    # Liveshare
+    ${CODE} --install-extension ms-vsliveshare.vsliveshare
+    ${CODE} --install-extension ms-vsliveshare.vsliveshare-audio
+
+    # Programming languages
+    ${CODE} --install-extension golang.go
+    ${CODE} --install-extension ms-vscode.cpptools
+    ${CODE} --install-extension redhat.java
+    ${CODE} --install-extension ms-vscode.powershell
+
+    # Python
+    ${CODE} --install-extension ms-python.python
+    ${CODE} --install-extension ms-toolsai.jupyter
+    ${CODE} --install-extension ms-python.vscode-pylance
+done
