@@ -37,6 +37,7 @@ alias vi='vim'
 alias gti='git'
 alias open="xdg-open"
 alias cmount="mount | column -t"
+alias codei="code-insiders"
 alias ll='ls -alh'
 alias la='ls -A'
 alias l='ls -CF'
