@@ -3,6 +3,9 @@
 CODES_VERSION="code code-insiders"
 
 for CODE in ${CODES_VERSION}; do
+		# Intellisense	
+		${CODE} --install-extension visualstudioexptteam.vscodeintellicode
+
     # ESLint, Prettier
     ${CODE} --install-extension dbaeumer.vscode-eslint
     ${CODE} --install-extension esbenp.prettier-vscode
@@ -23,7 +26,7 @@ for CODE in ${CODES_VERSION}; do
     ${CODE} --install-extension mtxr.sqltools
     ${CODE} --install-extension mtxr.sqltools-driver-sqlite
 
-    # Icons and ut
+    # Icons and utilities
     ${CODE} --install-extension PKief.material-icon-theme
     ${CODE} --install-extension tomoki1207.pdf
     ${CODE} --install-extension GrapeCity.gc-excelviewer
