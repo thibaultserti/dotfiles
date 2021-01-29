@@ -18,9 +18,10 @@ for CODE in ${CODES_VERSION}; do
     ${CODE} --install-extension ms-azuretools.vscode-docker
     ${CODE} --install-extension ms-vscode-remote.remote-containers
 
-    # Git
+    # Git and Github
     ${CODE} --install-extension donjayamanne.githistory
     ${CODE} --install-extension eamodio.gitlens
+		${CODE} --install-extension github.vscode-pull-request-github
 
     # SQL
     ${CODE} --install-extension mtxr.sqltools
