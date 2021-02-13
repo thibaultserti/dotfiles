@@ -9,3 +9,5 @@
 	ci = commit -S
 [commit]
 	gpgsign = true
+[init]
+	defaultBranch = main
