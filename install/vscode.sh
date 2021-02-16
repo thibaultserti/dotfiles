@@ -32,6 +32,8 @@ for CODE in ${CODES_VERSION}; do
     ${CODE} --install-extension tomoki1207.pdf
     ${CODE} --install-extension GrapeCity.gc-excelviewer
     ${CODE} --install-extension redhat.vscode-xml
+		${CODE} --install-extension coenraads.bracket-pair-colorizer
+		${CODE} --install-extension icrawl.discord-vscode
 
     # Liveshare
     ${CODE} --install-extension ms-vsliveshare.vsliveshare
