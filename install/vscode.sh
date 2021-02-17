@@ -3,8 +3,8 @@
 CODES_VERSION="code code-insiders"
 
 for CODE in ${CODES_VERSION}; do
-		# Intellisense	
-		${CODE} --install-extension visualstudioexptteam.vscodeintellicode
+		# Intellisense
+    ${CODE} --install-extension visualstudioexptteam.vscodeintellicode
 
     # ESLint, Prettier
     ${CODE} --install-extension dbaeumer.vscode-eslint
@@ -21,7 +21,7 @@ for CODE in ${CODES_VERSION}; do
     # Git and Github
     ${CODE} --install-extension donjayamanne.githistory
     ${CODE} --install-extension eamodio.gitlens
-		${CODE} --install-extension github.vscode-pull-request-github
+    ${CODE} --install-extension github.vscode-pull-request-github
 
     # SQL
     ${CODE} --install-extension mtxr.sqltools
@@ -32,8 +32,8 @@ for CODE in ${CODES_VERSION}; do
     ${CODE} --install-extension tomoki1207.pdf
     ${CODE} --install-extension GrapeCity.gc-excelviewer
     ${CODE} --install-extension redhat.vscode-xml
-		${CODE} --install-extension coenraads.bracket-pair-colorizer
-		${CODE} --install-extension icrawl.discord-vscode
+    ${CODE} --install-extension coenraads.bracket-pair-colorizer
+    ${CODE} --install-extension icrawl.discord-vscode
 
     # Liveshare
     ${CODE} --install-extension ms-vsliveshare.vsliveshare
